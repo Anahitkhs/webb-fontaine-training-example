@@ -17,10 +17,13 @@ public class AboutFloatingPointNumber {
             System.out.println("positive");
         } else if (n < 0) {
             System.out.println("negative");
-        } if (n < 1) {
+        }
+        if (Math.abs(n) < 1) {
             System.out.println("small");
-        } else if (n > 1000000){
+        } else if (Math.abs(n) > 1000000) {
             System.out.println("large");
         }
     }
 }
+
+

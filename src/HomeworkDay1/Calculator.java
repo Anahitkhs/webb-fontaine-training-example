@@ -15,25 +15,27 @@ public class Calculator {
         System.out.println("Enter math operation:");
         char c = scanner.next().charAt(0);
 
+        int result;
+
         switch (c) {
             case '+':
-                int x = a + b;
-                System.out.println("Result:" + a + c + b + "=" + x);
+                result = a + b;
+                System.out.println("Result:" + a + c + b + "=" + result);
                 break;
             case '-':
-                int y = a - b;
-                System.out.println("Result:" + a + c + b + "=" + y);
+                result = a - b;
+                System.out.println("Result:" + a + c + b + "=" + result);
                 break;
             case '*':
-                int z = a * b;
-                System.out.println("Result:" + a + c + b + "=" + z);
+                result = a * b;
+                System.out.println("Result:" + a + c + b + "=" + result);
                 break;
             case '/':
                 if (b == 0) {
                     System.out.println("Error:Divisor can't be 0");
                 } else {
-                    int g = a / b;
-                    System.out.println("Result:" + a + c + b + "=" + g);
+                    result = a / b;
+                    System.out.println("Result:" + a + c + b + "=" + result);
                     break;
                 }
         }

@@ -1,5 +1,6 @@
 package HomeworkDay1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -15,13 +16,20 @@ public class GreatestNumber {
         System.out.println("Enter 3rd number:");
         int z = scanner.nextInt();
 
-        if (x > y && x > z) {
+       /* if (x > y && x > z) {
             System.out.println("The greatest is: " + x);
         } else if (y > x && y > z) {
             System.out.println("The greatest is: " + y);
         } else if (z > x && z > y) {
             System.out.println("The greatest is: " + z);
         }
+        */
+
+       if (x>y && x>z){
+           System.out.println("The greatest is: " + x);
+       }else{
+           System.out.println("The greatest is: " + Math.max(y,z));
+       }
     }
 }
 
